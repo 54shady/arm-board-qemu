@@ -65,7 +65,7 @@
 
 带图形显示启动虚拟机
 
-	qemu-system-arm -M mcimx6ul-evk -m 512M \
+	qemu-system-arm -M mcimx6ul-evk --show-cursor -m 512M \
 		-kernel zImage \
 		-dtb 100ask_imx6ull_qemu.dtb  \
 		-display sdl -serial mon:stdio \
